@@ -21,19 +21,19 @@ class App extends Component {
     visibleLoadMore: false,
   };
 
-  componentDidMount() {
-    const parsedHits = JSON.parse(localStorage.getItem('hits'));
+  // componentDidMount() {
+  //   const parsedHits = JSON.parse(localStorage.getItem('hits'));
 
-    if (parsedHits !== null) {
-      this.setState({ hits: parsedHits });
-    }
-  }
+  //   if (parsedHits !== null) {
+  //     this.setState({ hits: parsedHits });
+  //   }
+  // }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.hits !== prevState.hits) {
-      localStorage.setItem('hits', JSON.stringify(this.state.hits));
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (this.state.hits !== prevState.hits) {
+  //     localStorage.setItem('hits', JSON.stringify(this.state.hits));
+  //   }
+  // }
 
   openModal = largeImageURL => {
     this.setState({
